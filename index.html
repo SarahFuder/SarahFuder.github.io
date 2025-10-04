@@ -227,8 +227,21 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+<script>
+document.getElementById('query').addEventListener('input', function() {
+  const filter = this.value.toLowerCase();
+  const projects = document.querySelectorAll('.posts article');
+  
+  projects.forEach(project => {
+    const text = project.innerText.toLowerCase();
+    project.style.display = text.includes(filter) ? '' : 'none';
+  });
+});
+</script>
+	
 	</body>
 </html>
+
 
 
 
