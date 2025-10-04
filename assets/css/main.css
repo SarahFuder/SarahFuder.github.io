@@ -2273,35 +2273,8 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-<style>
-/* --- Force "Hi I'm Sarah" text and image side by side --- */
-#banner .content.banner-flex {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  gap: 2rem;
-}
 
-#banner .content.banner-flex > .text-side {
-  flex: 1 1 55% !important;
-  min-width: 280px !important;
-}
 
-#banner .content.banner-flex > .image-side {
-  flex: 1 1 40% !important;
-  display: flex !important;
-  justify-content: flex-end !important;
-  align-items: center !important;
-  text-align: right !important;
-}
-
-#banner .content.banner-flex > .image-side img {
-  max-width: 220px !important;
-  height: auto !important;
-  border-radius: 50%;
-}
-</style>
 
 
 
