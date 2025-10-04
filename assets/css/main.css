@@ -2273,29 +2273,35 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-/* --- Custom banner layout: text left, image right --- */
-#banner .content {
+<style>
+/* --- Force "Hi I'm Sarah" text and image side by side --- */
+#banner .content.banner-flex {
   display: flex !important;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
   gap: 2rem;
 }
 
-#banner .text-side {
-  flex: 1 1 55%;
-  min-width: 280px;
+#banner .content.banner-flex > .text-side {
+  flex: 1 1 55% !important;
+  min-width: 280px !important;
 }
 
-#banner .image-side {
-  flex: 1 1 40%;
-  text-align: right;
+#banner .content.banner-flex > .image-side {
+  flex: 1 1 40% !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  text-align: right !important;
 }
 
-#banner .image-side img {
-  max-width: 250px;
-  height: auto;
+#banner .content.banner-flex > .image-side img {
+  max-width: 220px !important;
+  height: auto !important;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+</style>
+
+
 
