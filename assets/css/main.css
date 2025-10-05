@@ -2273,11 +2273,6 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-.responsive-logo {
-  width: 10vw;        /* 10% of the viewport width — scales with screen size */
-  max-width: 75px;    /* won’t grow beyond 75px even on big screens */
-  height: auto;       /* keeps proportions correct */
-}
 
 
 
